@@ -73,7 +73,7 @@ export class News extends Component {
         return (
         <div>
             <div className={`container my-3 `}>
-                <h2 className={`text-center my-3 text-${this.props.text}`}> Fastest & Latest News here. </h2>
+                <h2 className={`text-center my-3 text-${this.props.text}`}>  like share comment Fastest & Latest News here. </h2>
                 <h3 className={`text-center my-3 text-${this.props.text}`}> {this.capitalizeFirstLetter(this.props.category)} Category</h3>
                 {this.state.loading && <Spinner/> /* LOADING*/}  
                 <div className="row ">
