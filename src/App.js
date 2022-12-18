@@ -35,25 +35,26 @@ export default class App extends Component {
         document.body.style.backgroundColor='white';
       }
   }
+  pageSize = 6;
   render() {
     return (
       <>
       <BrowserRouter> 
       <Navbar mode={this.state.mode} text={this.state.textmode} togglemode={this.togglemode}/>
       <Routes>
-        <Route exact path={"/"} element={<News key="general" pageSize={9} country={"in"} category={"general"} mode={this.state.mode} text={this.state.textmode}/>} />
+        <Route exact path={"/"} element={<News key="general" pageSize={this.pageSize} country={"in"} category={"general"} mode={this.state.mode} text={this.state.textmode}/>} />
         
-        <Route exact path={"/business"} element={<News key="business" pageSize={9} country={"in"} category={"business"} mode={this.state.mode} text={this.state.textmode}/>} />
+        <Route exact path={"/business"} element={<News key="business" pageSize={this.pageSize} country={"in"} category={"business"} mode={this.state.mode} text={this.state.textmode}/>} />
         
-        <Route exact path={"/entertainment"} element={<News key="entertainment" pageSize={9} country={"in"} category={"entertainment"} mode={this.state.mode} text={this.state.textmode}/>} />
+        <Route exact path={"/entertainment"} element={<News key="entertainment" pageSize={this.pageSize} country={"in"} category={"entertainment"} mode={this.state.mode} text={this.state.textmode}/>} />
         
-        <Route exact path={"/health"} element={<News key="health" pageSize={9} country={"in"} category={"health"} mode={this.state.mode} text={this.state.textmode}/>} />
+        <Route exact path={"/health"} element={<News key="health" pageSize={this.pageSize} country={"in"} category={"health"} mode={this.state.mode} text={this.state.textmode}/>} />
         
-        <Route exact path={"/science"} element={<News key="science" pageSize={9} country={"in"} category={"science"} mode={this.state.mode} text={this.state.textmode}/>} />
+        <Route exact path={"/science"} element={<News key="science" pageSize={this.pageSize} country={"in"} category={"science"} mode={this.state.mode} text={this.state.textmode}/>} />
         
-        <Route exact path={"/sports"} element={<News key="sports" pageSize={9} country={"in"} category={"sports"} mode={this.state.mode} text={this.state.textmode}/>} />
+        <Route exact path={"/sports"} element={<News key="sports" pageSize={this.pageSize} country={"in"} category={"sports"} mode={this.state.mode} text={this.state.textmode}/>} />
         
-        <Route exact path={"/technology"} element={<News key="technology" pageSize={9} country={"in"} category={"technology"} mode={this.state.mode} text={this.state.textmode}/>} />
+        <Route exact path={"/technology"} element={<News key="technology" pageSize={this.pageSize} country={"in"} category={"technology"} mode={this.state.mode} text={this.state.textmode}/>} />
       </Routes>
       </BrowserRouter>
       </>
