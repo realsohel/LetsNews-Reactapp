@@ -1,12 +1,12 @@
-import React, { Component} from 'react'
+import React from 'react'
 
-export class NewsItem extends Component {
-    render() {
-        let {title, description, Imageurl , newsurl , author , date } = this.props;
+const  NewsItem = (props)=> {
+    
+        let {title, description, Imageurl , newsurl , author , date } = props;
         return (
 
         <div>
-            <div className={`card my-3 bg-${this.props.mode} text-${this.props.text}`} >
+            <div className={`card my-3 bg-${props.mode} text-${props.text}`} >
                 <img src={Imageurl?Imageurl:"https://cdn.iconscout.com/icon/free/png-256/no-image-1771002-1505134.png"} className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h5 className="card-title">{title}...</h5>
@@ -17,7 +17,7 @@ export class NewsItem extends Component {
             </div>
         </div>
         )
-    }
+    
 }
 
 export default NewsItem
