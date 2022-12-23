@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/LetsNews-Reactapp/static/css/main.e6c13ad2.css",
+    "main.js": "/LetsNews-Reactapp/static/js/main.0eaf4ef1.js",
+    "static/js/787.66a4299e.chunk.js": "/LetsNews-Reactapp/static/js/787.66a4299e.chunk.js",
+    "index.html": "/LetsNews-Reactapp/index.html",
+    "main.e6c13ad2.css.map": "/LetsNews-Reactapp/static/css/main.e6c13ad2.css.map",
+    "main.0eaf4ef1.js.map": "/LetsNews-Reactapp/static/js/main.0eaf4ef1.js.map",
+    "787.66a4299e.chunk.js.map": "/LetsNews-Reactapp/static/js/787.66a4299e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.0eaf4ef1.js"
+  ]
+}
